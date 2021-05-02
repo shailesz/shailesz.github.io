@@ -1,11 +1,86 @@
-table{
-    border: 1px solid black;
+@keyframes blinking {
+  0% {
+    visibility: hidden;
+  }
+  50%{
+      visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
 }
 
-tr{
-    border: 1px solid black;
+.terminal-new-line {
+    animation: blinking 1s infinite;
+    animation-timing-function: linear;
+  }
+  
+body {
+  background-color: black;
+  color: rgba(255, 255, 255, 0.95);
+  font: 1.3rem Inconsolata, monospace;
+  margin-left: 10px;
+  cursor: default;
 }
 
-td{
-    border: 1px solid black;
+.left-align {
+  text-align: left;
+}
+
+.center-align {
+  text-align: center;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.fwb {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: crimson;
+}
+
+table {
+  border: 0px dashed;
+  border-radius: 0px;
+}
+th {
+  padding: 10px 20px;
+  color: burlywood;
+}
+td {
+  padding: 10px 20px;
+}
+
+.top {
+  border-top: 2px dashed grey;
+}
+.left {
+  border-left: 2px dashed grey;
+}
+.right {
+  border-right: 2px dashed grey;
+}
+.bottom {
+  border-bottom: 2px dashed grey;
+}
+
+.number-row {
+  width: min-content;
+}
+
+.terminal-user {
+  color: #8ae234;
+}
+
+.terminal {
+  width: max-content;
+}
+
+.terminal-command-line {
+  color: crimson;
 }
