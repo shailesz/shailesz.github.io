@@ -2,8 +2,8 @@
   0% {
     visibility: hidden;
   }
-  50%{
-      visibility: hidden;
+  50% {
+    visibility: hidden;
   }
   100% {
     visibility: visible;
@@ -11,14 +11,14 @@
 }
 
 .terminal-new-line {
-    animation: blinking 1s infinite;
-    animation-timing-function: linear;
-  }
-  
+  animation: blinking 1s infinite;
+  animation-timing-function: linear;
+}
+
 body {
   background-color: black;
   color: rgba(255, 255, 255, 0.95);
-  font: 1.3rem Inconsolata, monospace;
+  font: 1rem Inconsolata, monospace;
   margin-left: 10px;
   cursor: default;
 }
@@ -78,9 +78,15 @@ td {
 }
 
 .terminal {
-  width: max-content;
+  width: 100%;
 }
 
 .terminal-command-line {
   color: crimson;
+}
+
+@media screen and (min-width: 760px) {
+  body {
+    font-size: 2rem;
+  }
 }
